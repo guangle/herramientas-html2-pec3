@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Info del festival de música, práctica 2 de la asignatura Herramientas HTML y CSS, basada en css grid,css flexbox y bootstrap"
+    />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Añejo Music Fest - Herramientas HTML y CSS II, PEC1</title>
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./assets/images/favicon.ico"
+    />
+
+    <link rel="stylesheet" href="./assets/styles/main.scss" />
+
+    <!-- Añadimos una fuente de google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Trispace:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="rotulo-principal" >
+        <h1 class="rotulo-principal__titulo">
+          &nbsp&nbspA<span class="offset">Ñ</span>EJO
+          <span class="offset">M</span>USIC F<span class="offset">E</span>ST&nbsp&nbsp
+        </h1>
+      </div>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse header-menu" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link header-menu__link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link header-menu__link" href="grupos.html">Grupos</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link header-menu__link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link header-menu__link" href="ambigu.html">Ambigú</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row img-portada">
+      <picture class="img-portada__foto">
+        <source srcset="assets/images/blog1-s.jpg" media="(max-width: 400px)">
+        <source srcset="assets/images/blog1-m.jpg" media="(max-width: 800px)">
+        <source srcset="assets/images/blog1-l.jpg" media="(min-width: 801px)">
+        <img src="assets/images/blog1.jpg" width="100%" height="auto" alt=" AMF">
+      </picture>
+      <div class="contenedor_titulo_principal"> <div class="text-center">
+        <span class="span_titulo_1 tracking-in-expand">¡Viva</span> <span class="span_titulo_2 tracking-in-contract-bck-top">la música!</span>
+      </div> </div>
+    </div>
+    <div class="contenedor-festival">
+      <div class="row">
+        <div class="col-lg-12 titulo-seccion">
+          <h1 class="titulo-seccion__texto" >Bienvenidos a Añejo Film Fest</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 parrafos-blog">
+          <p class="parrafos-blog__destacado" >Escuchar a tus canciones favoritas en directo, bailar, compartir una experiencia única con tus amigos, tomarte algo en el bar mientras tus pies se mueven solos sin que te des cuenta. En definitiva, sentir esa energía especial que solo la música puede trasmitir. Este reino no es solo de los jóvenes, eso se acabó. Bienvenidos al Añejo Music Fest, pasen y vean..</p>
+        </div>
+        <div class="col-lg-12 parrafos-blog">
+          <p>Añejo Music Fest pretende ser un festival diferente. Somos conscientes del auge que ha tenido el mundo festivalero en los últimos años. Es algo que celebrar y de lo que estar orgullosos. En muchas regiones de España se organizan grandes festivales, han florecido grupos y somos consicientes de que muchas personas han podido disfrutar en los últimos tiempos de conciertos, han podido bailar, cantar y se quedarán en su memoria momentos inovlidales. </p>
+          <p>Pero desde Añejo Music Fest nos preguntamos si no nos hemos dejado a alguien en el camino durante todo este proceso. Y nuestra respuesta a esta pregunta es que sí, que <span class="texto--destacado" >A nuestros mayores.</span>. Y no hay ninguna razón para que ellos también puedan disfrutar de todo el mundo de los festivales... y con ese propósito nace nuestro festival</p>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 parrafos-blog">
+        <hr class="parrafos-blog__separador" />
+        <div  >
+          La filosofía de nuestro festival, en 6 puntos:
+          <ol class="filosofia-festival" >
+            <li class="filosofia-festival__item" >La música no tiene ni fronteras ni edad. Todos pueden disfrutar de ella</li>
+            <li class="filosofia-festival__item"  >Hay que reivindicar la herencia musical española de este siglo</li>
+            <li class="filosofia-festival__item"  >La música y los eventos sociales tienen propieades terapéuticas incuestionables</li>
+            <li class="filosofia-festival__item"  >Todos merecen disfrutar en directo de sus canciones favoritas</li>
+            <li class="filosofia-festival__item"  >Lo más importante para nosotros es garantizar la seguridad y comodidad de nuestros festivaleros</li>
+            <li class="filosofia-festival__item"  >Los beneficios irán a parar a asociaciones y ONGs destinadas a ayudar a personas de la tercera edad</li>
+          </ol>
+        </div>
+        <hr class="parrafos-blog__separador" />
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 parrafos-blog">
+          <div class="cita">
+            <blockquote>
+              <p class="cita__texto" >
+                "Sin música, la vida sería un error"
+              </p>
+              <br />
+              <small class="cita__autor" >
+              - Friedrich Nietzsche, filósofo y poeta
+              </small>
+              </blockquote>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12 parrafos-blog">
+          <p>Obviamente el salto generacional es innegable, y desde la organización del festival ni queremos ni pretendemos que nuestros mayores salten, o disfruten del impresionante directo de Izal o Vetusta Morla. Ellos tienen su propia música, sus horarios y su ámbiente. Por tanto <span class="texto--destacado" >La organización del festival se adaptará totalmente a sus necesidades.</span></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <img src="assets/images/blog2.jpg" width="100%" class="img-fluid rounded" alt="Responsive image">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 parrafos-blog">
+            <p>Por último, invitar a todos que que se animen, no se arrepentirán. Y si eres joven y piensas que esto no es para tí, puedes hacer un regalo inolvidable a tus padres o abuelos</p>
+            <p>Si todavía te quedan dudas, pasate por la sección de <a href="grupos.html">grupos</a> y te convenceremos enseguida. Si ya tienes tu entrada para el festival, pasate por el <a href="ambigu.html">ambigú</a> y echa unas partidas a nuestro trivial o escucha Radio Añejo para ir preparándote</p>
+            </div>
+          </div>
+
+    </div>
+
+
+
+
+    <div class="footer">
+      <div class="footer__titulo text-center" >
+        <img src="assets/images/ms-icon-310x310.png" width="24px" height="24px" alt="Añejo Music Fest"></img>
+        <span>AÑEJO MUSIC FEST 2020</span>
+      </div>
+      <div class="footer__enlaces text-center">
+        <div>
+          <a  href="index.html">Inicio</a>
+          <a  href="grupos.html">Grupos</a>
+          <a  href="blog.html">Blog</a>
+          <a  href="ambigu.html">Ambigú</a>
+        </div>
+        <div class="copyright" >
+          <span class="copiright__texto" >Juan Jesús Gutiérrez Ramos. PEC 2 de la asignatura Herramientas HTML y CSS II, 2020</span>
+        </div>
+      </div>
+      <div class="footer__social-icons text-center" >
+        <i class="fab fa-2x fa-facebook-square color-azul"></i>
+        <i class="fab fa-2x fa-twitter-square color-amarillo"></i>
+        <i class="fab fa-2x fa-instagram-square color-rosa"></i>
+      </div>
+    </div>
+
+    <script src="./assets/scripts/main.js"></script>
+  </body>
+</html>

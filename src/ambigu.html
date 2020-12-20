@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Info del festival de música, práctica 2 de la asignatura Herramientas HTML y CSS, basada en css grid,css flexbox y bootstrap"
+    />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Añejo Music Fest - Herramientas HTML y CSS II, PEC1</title>
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./assets/images/favicon.ico"
+    />
+
+    <link rel="stylesheet" href="./assets/styles/main.scss" />
+
+    <!-- Añadimos una fuente de google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Trispace:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="rotulo-principal" >
+        <h1 class="rotulo-principal__titulo">
+          &nbsp&nbspA<span class="offset">Ñ</span>EJO
+          <span class="offset">M</span>USIC F<span class="offset">E</span>ST&nbsp&nbsp
+        </h1>
+      </div>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse header-menu" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link header-menu__link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link header-menu__link" href="grupos.html">Grupos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link header-menu__link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link header-menu__link" href="ambigu.html">Ambigú</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="contenedor-festival">
+      <div class="row">
+        <div class="col-lg-12 titulo-seccion">
+          <h1 class="titulo-seccion__texto" >Ambigú</h1>
+        </div>
+      </div>
+      <div class="row" id="subseccion_juego" >
+        <div class="col-lg-12 titulo-subseccion">
+          <h2 class="titulo-subseccion__texto" >El juego del festival</h2>
+          <small
+              >Ponte a prueba e intenta adivinar la letra de las canciones.
+              ¿Lo sabes todo de tus artistas favoritos?</small
+            >
+        </div>
+        <div class="row contenedor-preguntas">
+
+
+          <div class="col-lg-4 col-sm-12">
+            <div
+              class="card card_pregunta sombra-moviendose"
+              style="width: 18rem"
+            >
+              <div class="card-header">
+                "¿Qué pasará?, ¿qué misterio habrá?, puede ser.."
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item respuesta" es-correcta="1">
+                  Mi gran noche
+                </li>
+                <li class="list-group-item respuesta" es-correcta="0">
+                  Ese coche
+                </li>
+                <li class="list-group-item respuesta" es-correcta="0">
+                  La otra noche
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-12">
+            <div
+              class="card card_pregunta sombra-moviendose"
+              style="width: 18rem"
+            >
+              <div class="card-header">"Tengo que hacer un rosario..."</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item respuesta" es-correcta="0">
+                  De color verde y rubí
+                </li>
+                <li class="list-group-item respuesta" es-correcta="0">
+                  Para entregartelo a tí
+                </li>
+                <li class="list-group-item respuesta" es-correcta="1">
+                  Con los dientes de marfil
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-12">
+            <div
+              class="card card_pregunta sombra-moviendose"
+              style="width: 18rem"
+            >
+              <div class="card-header">"Mi carro.. me lo robaron.."</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item respuesta" es-correcta="0">
+                  Tuvo que ser el otro día
+                </li>
+                <li class="list-group-item respuesta" es-correcta="1">
+                  Anoche cuando dormía
+                </li>
+                <li class="list-group-item respuesta" es-correcta="0">
+                  la sinverguenza de mi tía
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row contenedor-preguntas">
+          <div class="col-lg-4 col-sm-12">
+            <div
+              class="card card_pregunta sombra-moviendose"
+              style="width: 18rem"
+            >
+              <div class="card-header">
+                ¿Cuál es el nombre real de la niña de la puebla?
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item respuesta" es-correcta="1">
+                  Dolores Jiménez Alcántara
+                </li>
+                <li class="list-group-item respuesta" es-correcta="0">
+                  Marta Álvarez Díaz
+                </li>
+                <li class="list-group-item respuesta" es-correcta="0">
+                  Alice Roberts Harris
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-12">
+            <div
+              class="card card_pregunta sombra-moviendose"
+              style="width: 18rem"
+            >
+              <div class="card-header">
+                De qué país es originaria Betty Missiego
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item respuesta" es-correcta="0">
+                  Nicaragua
+                </li>
+                <li class="list-group-item respuesta" es-correcta="0">
+                  Tailandia
+                </li>
+                <li class="list-group-item respuesta" es-correcta="1">
+                  Perú
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-12">
+            <div
+              class="card card_pregunta sombra-moviendose"
+              style="width: 18rem"
+            >
+              <div class="card-header">
+                ¿En qué película NO ha participado Marisol?
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item respuesta" es-correcta="0">
+                  Tómbola
+                </li>
+                <li class="list-group-item respuesta" es-correcta="1">
+                  ¡Ay, pena, penita, pena!
+                </li>
+                <li class="list-group-item respuesta" es-correcta="0">
+                  Un rayo de luz
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+        <div class="row">
+          <div class="col-lg-6 col-sm-12 text-center">
+            <h2 class="titulo-subseccion__texto" >Radio Añejo</h2>
+            <iframe src="https://open.spotify.com/embed/playlist/1F2AxMDFybaiSfEZyDjpDc" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </div>
+          <div class="col-lg-6 col-sm-12 text-center">
+            <h2 class="titulo-subseccion__texto" >El festival en RRSS</h2>
+            <a class="twitter-timeline" data-lang="es" data-width="400" data-height="500" data-theme="light" href="https://twitter.com/JuanJes78281003?ref_src=twsrc%5Etfw">Tweets by JuanJes78281003</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <a class="btn btn-danger btn-lg"  href="https://twitter.com/intent/tweet?button_hashtag=añejoMusicFest&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #añejoMusicFest</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
+
+      </div>
+
+
+
+    <div class="footer">
+      <div class="footer__titulo text-center" >
+        <img src="assets/images/ms-icon-310x310.png" width="24px" height="24px" alt="Añejo Music Fest"></img>
+        <span>AÑEJO MUSIC FEST 2020</span>
+      </div>
+      <div class="footer__enlaces text-center">
+        <div>
+          <a  href="index.html">Inicio</a>
+          <a  href="grupos.html">Grupos</a>
+          <a  href="blog.html">Blog</a>
+          <a  href="ambigu.html">Ambigú</a>
+        </div>
+        <div class="copyright" >
+          <span class="copiright__texto" >Juan Jesús Gutiérrez Ramos. PEC 2 de la asignatura Herramientas HTML y CSS II, 2020</span>
+        </div>
+      </div>
+      <div class="footer__social-icons text-center" >
+        <i class="fab fa-2x fa-facebook-square color-azul"></i>
+        <i class="fab fa-2x fa-twitter-square color-amarillo"></i>
+        <i class="fab fa-2x fa-instagram-square color-rosa"></i>
+      </div>
+    </div>
+
+    <script src="./assets/scripts/main.js"></script>
+  </body>
+</html>
