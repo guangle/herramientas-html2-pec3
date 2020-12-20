@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <!-- do not remove this line! -->
+        <title>UOC Boilerplate</title>
+    </head>
+    <body>
+        <img
+            src="assets/images/logo.png"
+            alt="Universitat Oberta de Catalunya"
+            class="uoc-logo"
+        />
+        <h1 class="uoc-title">Hello, UOC!</h1>
+        <h1><a href="prueba.html">Pruebas tail wind</a></h1>
+        <p>
+            This is a starter template for the Advanced HTML and CSS Tools
+            courses from the Master's Program in Multimedia Applications and the
+            Master's Program in Web App and Website Development at the
+            Universitat Oberta de Catalunya.
+        </p>
+
+        <figure class="bg-gray-100 rounded-xl p-8">
+            <img
+                class="w-32 h-32 rounded-full mx-auto"
+                src="assets/images/sarah-dayan.jpg"
+                alt=""
+                width="384"
+                height="512"
+            />
+            <div class="pt-6 space-y-4">
+                <blockquote>
+                    <p class="text-lg font-se">
+                        “Tailwind CSS is the only framework that I've seen scale
+                        on large teams. It’s easy to customize, adapts to any
+                        design, and the build size is tiny.”
+                    </p>
+                </blockquote>
+                <figcaption>
+                    <div>Sarah Dayan</div>
+                    <div>Staff Engineer, Algolia</div>
+                </figcaption>
+            </div>
+        </figure>
+
+        <div class="flex p-6 font-mono">
+            <div class="flex-none w-40 relative">
+                <img
+                    src="assets/images/sarah-dayan.jpg"
+                    alt=""
+                    class="absolute inset-0 w-full h-full object-cover border border-black shadow-offset-lime"
+                />
+            </div>
+            <form class="flex-auto pl-6">
+                <div
+                    class="flex flex-wrap items-baseline pl-52 -mt-6 -mr-6 -ml-52 py-6 pr-6 bg-black text-white"
+                >
+                    <h1
+                        class="w-full flex-none text-2xl leading-7 mb-2 font-bold"
+                    >
+                        Retro Shoe
+                    </h1>
+                    <div class="text-2xl leading-7 font-bold">$89.00</div>
+                    <div class="text-sm font-medium ml-3">In stock</div>
+                </div>
+                <div class="flex items-baseline py-8">
+                    <div
+                        class="space-x-3.5 flex text-center text-sm leading-none font-bold text-gray-500"
+                    >
+                        <label>
+                            <input
+                                class="w-6 text-black shadow-underline"
+                                name="size"
+                                type="radio"
+                                value="xs"
+                                checked
+                            />
+                            XS
+                        </label>
+                        <label>
+                            <input
+                                class="w-6"
+                                name="size"
+                                type="radio"
+                                value="s"
+                            />
+                            S
+                        </label>
+                        <label>
+                            <input
+                                class="w-6"
+                                name="size"
+                                type="radio"
+                                value="m"
+                            />
+                            M
+                        </label>
+                        <label>
+                            <input
+                                class="w-6"
+                                name="size"
+                                type="radio"
+                                value="l"
+                            />
+                            L
+                        </label>
+                        <label>
+                            <input
+                                class="w-6"
+                                name="size"
+                                type="radio"
+                                value="xl"
+                            />
+                            XL
+                        </label>
+                    </div>
+                    <div class="ml-auto text-xs underline">Size Guide</div>
+                </div>
+                <div class="flex space-x-3 text-sm font-bold uppercase mb-4">
+                    <div class="flex-auto flex space-x-3">
+                        <button
+                            class="w-1/2 flex items-center justify-center bg-lime-300 text-black border border-black shadow-offset-black"
+                            type="submit"
+                        >
+                            Buy now
+                        </button>
+                        <button
+                            class="w-1/2 flex items-center justify-center border border-black shadow-offset-black"
+                            type="button"
+                        >
+                            Add to bag
+                        </button>
+                    </div>
+                    <button
+                        class="flex-none flex items-center justify-center w-9 h-9 border border-black"
+                        type="button"
+                        aria-label="like"
+                    >
+                        <svg width="20" height="20" fill="currentColor">
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                            />
+                        </svg>
+                    </button>
+                </div>
+                <p class="text-xs leading-5 text-gray-500">
+                    Free shipping on all continental US orders.
+                </p>
+            </form>
+        </div>
+
+        <!--
+  Welcome to Tailwind Play, the official Tailwind CSS playground!
+
+  Everything here works just like it does when you're running Tailwind locally
+  with a real build pipeline. You can customize your config file, use features
+  like `@apply`, or even add third-party plugins.
+
+  Feel free to play with this example if you're just learning, or trash it and
+  start from scratch if you know enough to be dangerous. Have fun!
+-->
+        <div
+            class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12"
+        >
+            <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+                <div
+                    class="absolute inset-0 bg-gradient-to-r from-cyan-400 to-light-blue-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"
+                ></div>
+                <div
+                    class="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20"
+                >
+                    <div class="max-w-md mx-auto">
+                        <div>
+                            <img
+                                src="assets/images/sarah-dayan.jpg"
+                                class="h-7 sm:h-8"
+                            />
+                        </div>
+                        <div class="divide-y divide-gray-200">
+                            <div
+                                class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7"
+                            >
+                                <p>
+                                    An advanced online playground for Tailwind
+                                    CSS, including support for things like:
+                                </p>
+                                <ul class="list-disc space-y-2">
+                                    <li class="flex items-start">
+                                        <span
+                                            class="h-6 flex items-center sm:h-7"
+                                        >
+                                            <svg
+                                                class="flex-shrink-0 h-5 w-5 text-cyan-500"
+                                                viewBox="0 0 20 20"
+                                                fill="currentColor"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                    clip-rule="evenodd"
+                                                />
+                                            </svg>
+                                        </span>
+                                        <p class="ml-2">
+                                            Customizing your
+                                            <code
+                                                class="text-sm font-bold text-gray-900"
+                                                >tailwind.config.js</code
+                                            >
+                                            file
+                                        </p>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span
+                                            class="h-6 flex items-center sm:h-7"
+                                        >
+                                            <svg
+                                                class="flex-shrink-0 h-5 w-5 text-cyan-500"
+                                                viewBox="0 0 20 20"
+                                                fill="currentColor"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                    clip-rule="evenodd"
+                                                />
+                                            </svg>
+                                        </span>
+                                        <p class="ml-2">
+                                            Extracting classes with
+                                            <code
+                                                class="text-sm font-bold text-gray-900"
+                                                >@apply</code
+                                            >
+                                        </p>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span
+                                            class="h-6 flex items-center sm:h-7"
+                                        >
+                                            <svg
+                                                class="flex-shrink-0 h-5 w-5 text-cyan-500"
+                                                viewBox="0 0 20 20"
+                                                fill="currentColor"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                    clip-rule="evenodd"
+                                                />
+                                            </svg>
+                                        </span>
+                                        <p class="ml-2">
+                                            Code completion with instant preview
+                                        </p>
+                                    </li>
+                                </ul>
+                                <p>
+                                    Perfect for learning how the framework
+                                    works, prototyping a new idea, or creating a
+                                    demo to share online.
+                                </p>
+                            </div>
+                            <div
+                                class="pt-6 text-base leading-6 font-bold sm:text-lg sm:leading-7"
+                            >
+                                <p>Want to dig deeper into Tailwind?</p>
+                                <p>
+                                    <a
+                                        href="https://tailwindcss.com/docs"
+                                        class="text-cyan-600 hover:text-cyan-700"
+                                    >
+                                        Read the docs &rarr;
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./assets/scripts/main.js"></script>
+        <!-- do not remove this line! -->
+    </body>
+</html>
