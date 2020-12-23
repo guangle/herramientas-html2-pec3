@@ -8,7 +8,7 @@
       content="Info del festival de música, práctica 2 de la asignatura Herramientas HTML y CSS, basada en css grid,css flexbox y bootstrap"
     />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
-    <title>Añejo Music Fest - Herramientas HTML y CSS II, PEC1</title>
+    <title>Añejo Music Fest TailWind Edition - Herramientas HTML y CSS II, PEC3</title>
 
     <link
       rel="shortcut icon"
@@ -25,118 +25,106 @@
     />
   </head>
 
-  <!-- logo de -->
-  <!-- https://codepen.io/KevinOgden/full/JEwjBB -->
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="rotulo-principal" >
-        <h1 class="rotulo-principal__titulo">
-          &nbsp&nbspA<span class="offset">Ñ</span>EJO
-          <span class="offset">M</span>USIC F<span class="offset">E</span>ST&nbsp&nbsp
-        </h1>
+  <body class="bg-color_fest_oscuro1 font-trispace text-white">
+   
+    <!-- nueva nav tailwind visto en https://tailwindcomponents.com/component/responsive-header -->
+    <nav class="flex items-center justify-between flex-wrap bg-teal">
+      <div class="flex items-center flex-no-shrink text-white mr-6
+      p-2 border-4 border-blue-300 rounded-xl shadow-azul">
+        <span class="font-semibold text-xl tracking-tight text-color_fest_rosa tracking-wider">AÑEJO MUSIC FEST</span>
       </div>
-
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse header-menu" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active ">
-            <a class="nav-link header-menu__link" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link header-menu__link" href="grupos.html">Grupos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link header-menu__link" href="blog.html">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link header-menu__link" href="ambigu.html">Ambigú</a>
-          </li>
-        </ul>
+      <div class="block lg:hidden">
+        <button class="flex items-center px-3 py-2 border rounded capitalize border-teal-light hover:text-white hover:border-white">
+          <svg class="h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        </button>
+      </div>
+      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto text-2xl tracking-wide text-gray-500">
+        <div class="lg:flex-grow">
+          <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0  hover:text-white mr-4">
+            INDEX
+          </a>
+          <a href="grupos.html" class="block mt-4 lg:inline-block lg:mt-0  hover:text-white mr-4">
+            GRUPOS
+          </a>
+          <a href="blog.html" class="block mt-4 lg:inline-block lg:mt-0  hover:text-white mr-4">
+            BLOG
+          </a>
+          <a href="ambigu.html" class="block mt-4 lg:inline-block lg:mt-0  hover:text-white mr-4">
+            AMBIGÚ
+          </a>
+        </div>
+        
       </div>
     </nav>
 
-    <div>
+    <div class="container mx-auto px-44" >
 
-      <div class="cartel-portada sombra-moviendose">
-        <div class="contenedor-grid">
-          <div class="none"></div>
-          <div class="contenedor-grid__titulo">
-            <div class="titulo-neon" >
-              <h1 class="titulo-neon__texto">
-                &nbsp&nbspA<span class="offset">Ñ</span>EJO
-                <span class="offset">M</span>USIC F<span class="offset">E</span>ST&nbsp&nbsp
-              </h1>
-            </div>
-          </div>
-          <div class="contenedor-grid__grupos color-azul">
-            <i class="fas fa-music"></i>
-            <a href="grupos.html" class="enlaceGrid color-azul" >Grupos</a>
-          </div>
-          <div class="contenedor-grid__neon1"></div>
-          <div class="contenedor-grid__foto1">
-              <img src="assets/images/artista1.jpg" width="100%" height="100%" alt="Artista1"></img>
-          </div>
-          <div class="contenedor-grid__degradado-azul"></div>
-          <div class="contenedor-grid__ambigu color-amarillo">
-            <i class="fas fa-cocktail"></i>
-            <a href="ambigu.html" class="enlaceGrid color-amarillo" >Ambigú</a>
-          </div>
-          <div class="contenedor-grid__logo">
-            <img src="assets/images/ms-icon-310x310.png" width="100%" height="100%" alt="Artista1"></img>
-          </div>
-          <div class="contenedor-grid__solido2"></div>
-          <div class="contenedor-grid__foto2">
-            <img src="assets/images/artista2.jpg" width="100%" height="100%" alt="Artista2"></img>
-          </div>
-          <div class="contenedor-grid__foto3">
-            <img src="assets/images/artista3.jpg" width="100%" height="100%" alt="Artista3"></img>
-          </div>
-          <div class="contenedor-grid__foto4">
-            <img src="assets/images/artista4.jpg" width="100%" height="100%" alt="Artista4"></img>
-          </div>
-          <div class="contenedor-grid__foto5">
-            <img src="assets/images/artista5.jpg" width="100%" height="100%" alt="Artista5"></img>
-          </div>
-          <div class="contenedor-grid__foto6">
-            <img src="assets/images/artista6.jpg" width="100%" height="100%" alt="Artista6"></img>
-          </div>
-          <div class="contenedor-grid__degradado"></div>
+      <!--prueba con grid tailwindcss-->
+      <div class="grid grid-cols-5 grid-rows-6 gap-4">
+        <div></div>
+        <div></div>
+        <div class="col-span-3"> 
+          AÑEJO MUSIC FEST (TITULO)
         </div>
+        <div class="text-center pt-8 text-3xl text-color_fest_azul" >
+          <i class="fas fa-music"></i>
+          <a href="grupos.html" class="enlaceGrid color-azul" >Grupos</a>
+        </div>
+        <div class="bg-color_fest_rosa"></div>
+        <div class="col-span-3 row-span-2">
+          <img src="assets/images/artista1.jpg" class="h-56 w-full" alt="Artista1"></img>
+        </div>
+        <div class="bg-gradient-to-r from-green-400 to-blue-500"></div>
+        <div class="text-center pt-8 text-3xl text-color_fest_amarillo" >
+          <i class="fas fa-cocktail"></i>
+          <a href="ambigu.html" class="enlaceGrid color-amarillo" >Ambigú</a>
+        </div>
+        <div class="col-span-2 row-span-2 place-self-center">
+          <img src="assets/images/ms-icon-310x310.png" class="w-3/7 h-36" alt="Artista1"></img>
+        </div>
+        <div class="row-span-2">
+          <img src="assets/images/artista2.jpg" class="w-full h-56" alt="Artista2"></img>
+        </div>
+        <div >
+          <img src="assets/images/artista3.jpg" class="w-full h-28"  alt="Artista3"></img>
+        </div>
+        <div >
+          <img src="assets/images/artista4.jpg" class="w-full h-28"  alt="Artista4"></img>
+        </div>
+        <div >
+          <img src="assets/images/artista5.jpg" class="w-full h-28"  alt="Artista5"></img>
+        </div>
+        <div >
+          <img src="assets/images/artista6.jpg" class="w-full h-28"  alt="Artista6"></img>
+        </div>
+        <div class="col-span-5 h-12 bg-gradient-to-r from-color_fest_rosa to-pink-300"></div>
       </div>
-    </div>
 
-    <div class="footer">
-      <div class="footer__titulo text-center" >
-        <img src="assets/images/ms-icon-310x310.png" width="24px" height="24px" alt="Añejo Music Fest"></img>
-        <span>AÑEJO MUSIC FEST 2020</span>
+
+      
+          </div>
+
+    <div class="flex text-center pt-4">
+      <div class="flex-1" >
+        <img src="assets/images/ms-icon-310x310.png" class="inline" width="24px" height="24px" alt="Añejo Music Fest"></img>
+        <span class="font-semibold text-xl tracking-wide text-color_fest_rosa" >AÑEJO MUSIC FEST 2020</span>
       </div>
-      <div class="footer__enlaces text-center">
-        <div>
+      <div class="flex-1">
+        <div class="text-xl" >
           <a  href="index.html">Inicio</a>
           <a  href="grupos.html">Grupos</a>
           <a  href="blog.html">Blog</a>
           <a  href="ambigu.html">Ambigú</a>
         </div>
-        <div class="copyright" >
-          <span class="copiright__texto" >Juan Jesús Gutiérrez Ramos. PEC 2 de la asignatura Herramientas HTML y CSS II, 2020</span>
+        <div class="" >
+          <span class="text-xs" >Juan Jesús Gutiérrez Ramos. PEC 2 de la asignatura Herramientas HTML y CSS II, 2020</span>
         </div>
       </div>
-      <div class="footer__social-icons text-center" >
-        <i class="fab fa-2x fa-facebook-square color-azul"></i>
-        <i class="fab fa-2x fa-twitter-square color-amarillo"></i>
-        <i class="fab fa-2x fa-instagram-square color-rosa"></i>
+      <div class="flex-1 text-lg" >
+        <i class="fab fa-2x fa-facebook-square text-color_fest_azul hover:shadow-gris"></i>
+        <i class="fab fa-2x fa-twitter-square text-color_fest_amarillo hover:shadow-gris"></i>
+        <i class="fab fa-2x fa-instagram-square text-color_fest_rosa hover:shadow-gris"></i>
       </div>
     </div>
 
