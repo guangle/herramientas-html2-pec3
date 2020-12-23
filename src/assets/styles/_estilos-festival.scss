@@ -12,3 +12,7 @@ son conjuntos de clases que usaremos frecuentemente en la aplicación
 .card-posicionamiento {
   @apply my-1 w-full lg:w-3/10 md:w-3/7 m-1 md:m-2 lg:m-3;
 }
+
+.card_pregunta {
+  @apply bg-white text-color_fest_oscuro1 border-4 border-color_fest_azul rounded-lg;
+}

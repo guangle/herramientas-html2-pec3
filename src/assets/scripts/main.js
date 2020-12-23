@@ -10,21 +10,21 @@ var respuesta = function () {
   var correcta = this.getAttribute("es-correcta");
   const tarjeta = this.parentElement.parentElement;
 
-  tarjeta.classList.remove("shake-horizontal");
-  tarjeta.classList.remove("jello-horizontal");
+  tarjeta.classList.remove("animate-spin-1");
+  tarjeta.classList.remove("animate-ping-1");
   tarjeta.firstElementChild.classList.remove("bg-color_fest_verde");
   tarjeta.firstElementChild.classList.remove("bg-color_fest_rosa");
   var respuestas = tarjeta.getElementsByClassName("respuesta");
   for (var i = 0; i < respuestas.length; i++) {
-    respuestas.item(i).classList.remove("font-weight-bold");
+    respuestas.item(i).classList.remove("font-bold");
   }
 
-  this.classList.add("font-weight-bold");
+  this.classList.add("font-bold");
   if (correcta == 1) {
-    tarjeta.classList.add("jello-horizontal");
+    tarjeta.classList.add("animate-ping-1");
     tarjeta.firstElementChild.classList.add("bg-color_fest_verde");
   } else {
-    tarjeta.classList.add("shake-horizontal");
+    tarjeta.classList.add("animate-spin-1");
     tarjeta.firstElementChild.classList.add("bg-color_fest_rosa");
   }
 };

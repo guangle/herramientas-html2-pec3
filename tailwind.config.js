@@ -19,6 +19,8 @@ module.exports = {
     //Definimos nuestros propios anchos
     width: {
       'full' : '100%',
+      'auto' : 'auto',
+      '3' : '0.75rem',
       '3/10': '30%',
       '1/2' : '50%',
       '1/7': '14.2857143%',
@@ -37,7 +39,20 @@ module.exports = {
     },
     gridTemplateRows: {
      '6': 'repeat(5, 100px) 50px',
+    },
+    keyframes: {
+      moverSombra: {
+        '0%, 100%': { 'box-shadow' : '10px 10px 30px -8px rgba(255, 230, 107, 1)' },
+        '25%': { 'box-shadow' : '10px 10px 30px -8px rgba(130, 35, 178, 1)' },
+        '50%': { 'box-shadow': '10px 10px 30px -8px rgba(217, 3, 104, 1)' },
+        '75%': { 'box-shadow' : '10px 10px 30px -8px rgba(241, 233, 218, 1)' }
     }
+  },
+    animation: {
+      'ping-1': 'ping 1s linear',
+      'spin-1': 'spin 1s linear',
+      'moverSombra' :  'moverSombra 8s linear infinite'
+     }
   },
   variants: {},
   plugins: [],
