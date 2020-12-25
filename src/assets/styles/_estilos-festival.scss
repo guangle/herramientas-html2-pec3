@@ -16,3 +16,8 @@ son conjuntos de clases que usaremos frecuentemente en la aplicación
 .card_pregunta {
   @apply bg-white text-color_fest_oscuro1 border-4 border-color_fest_azul rounded-lg;
 }
+
+//Comentar
+.numero_lista {
+  @apply mr-4 py-1 px-4 text-2xl font-bold text-color_fest_amarillo transform -rotate-12 rounded-3xl shadow-azul-small;
+}

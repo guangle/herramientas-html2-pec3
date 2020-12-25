@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta
       name="description"
-      content="Info del festival de música, práctica 2 de la asignatura Herramientas HTML y CSS, basada en css grid,css flexbox y bootstrap"
+      content="Info del festival de música, práctica 3 de la asignatura Herramientas HTML y CSS, basada en el uso de TailWindCSS"
     />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <title>Añejo Music Fest TailWind Edition - Herramientas HTML y CSS II, PEC3</title>
@@ -27,18 +27,23 @@
 
   <body class="bg-color_fest_oscuro1 font-trispace text-white">
     
-    <!-- nueva nav tailwind visto en https://tailwindcomponents.com/component/responsive-header -->
-    <nav class="flex items-center justify-between flex-wrap bg-teal">
+    <!-- 
+      nueva nav tailwind visto en https://tailwindcomponents.com/component/responsive-header ,
+      adaptada al diseño de la web y añadido el comportamiento JS para mostrar/ocultar los enlaces
+      en dispositivos móviles
+     -->
+    <nav class="flex items-center justify-between flex-wrap">
       <div class="flex items-center flex-no-shrink text-white mr-6
       p-2 border-4 border-blue-300 rounded-xl shadow-azul">
         <span class="font-semibold text-xl tracking-tight text-color_fest_rosa tracking-wider">AÑEJO MUSIC FEST</span>
       </div>
       <div class="block lg:hidden">
-        <button class="flex items-center px-3 py-2 border rounded capitalize hover:text-white hover:border-white">
+        <button class="flex items-center px-3 py-2 border rounded capitalize hover:text-white hover:border-white" 
+        onclick="document.getElementById('enlaces_menu').classList.toggle('hidden')" >
           <i class="fas fa-bars text-white"></i>
         </button>
       </div>
-      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto text-2xl tracking-wide text-gray-500">
+      <div id="enlaces_menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto text-2xl tracking-wide text-gray-500">
         <div class="lg:flex-grow">
           <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4">
             INDEX
@@ -73,15 +78,12 @@
         <div class="flex flex-wrap justify-between">
 
 
-          <div class="card-posicionamiento card_pregunta">
-            <div
-              
-              
-            >
+          <div class="card-posicionamiento card_pregunta animate-moverSombra">
+            <div>
               <div class="bg-gray-200 p-4">
                 "¿Qué pasará?, ¿qué misterio habrá?, puede ser.."
               </div>
-              <ul class="list-group list-group-flush">
+              <ul class="">
                 <li class="respuesta pt-4 pl-4 border-t-2 border-color_fest_oscuro1" es-correcta="1">
                   Mi gran noche
                 </li>
@@ -95,13 +97,13 @@
             </div>
           </div>
 
-          <div class="card-posicionamiento card_pregunta">
+          <div class="card-posicionamiento card_pregunta animate-moverSombra">
             <div
               
               
             >
               <div class="bg-gray-200 p-4">"Tengo que hacer un rosario..."</div>
-              <ul class="list-group list-group-flush">
+              <ul class="">
                 <li class="respuesta pt-4 pl-4 border-t-2 border-color_fest_oscuro1" es-correcta="0">
                   De color verde y rubí
                 </li>
@@ -115,13 +117,13 @@
             </div>
           </div>
 
-          <div class="card-posicionamiento card_pregunta">
+          <div class="card-posicionamiento card_pregunta animate-moverSombra">
             <div
               
               
             >
               <div class="bg-gray-200 p-4">"Mi carro.. me lo robaron.."</div>
-              <ul class="list-group list-group-flush">
+              <ul class="">
                 <li class="respuesta pt-4 pl-4 border-t-2 border-color_fest_oscuro1" es-correcta="0">
                   Tuvo que ser el otro día
                 </li>
@@ -136,7 +138,7 @@
           </div>
         
         
-          <div class="card-posicionamiento card_pregunta">
+          <div class="card-posicionamiento card_pregunta animate-moverSombra">
             <div
               
               
@@ -144,7 +146,7 @@
               <div class="bg-gray-200 p-4">
                 ¿Cuál es el nombre real de la niña de la puebla?
               </div>
-              <ul class="list-group list-group-flush">
+              <ul class="">
                 <li class="respuesta pt-4 pl-4 border-t-2 border-color_fest_oscuro1" es-correcta="1">
                   Dolores Jiménez Alcántara
                 </li>
@@ -158,7 +160,7 @@
             </div>
           </div>
 
-          <div class="card-posicionamiento card_pregunta">
+          <div class="card-posicionamiento card_pregunta animate-moverSombra">
             <div
               
               
@@ -166,7 +168,7 @@
               <div class="bg-gray-200 p-4">
                 De qué país es originaria Betty Missiego
               </div>
-              <ul class="list-group list-group-flush">
+              <ul class="">
                 <li class="respuesta pt-4 pl-4 border-t-2 border-color_fest_oscuro1" es-correcta="0">
                   Nicaragua
                 </li>
@@ -180,7 +182,7 @@
             </div>
           </div>
 
-          <div class="card-posicionamiento card_pregunta">
+          <div class="card-posicionamiento card_pregunta animate-moverSombra">
             <div
               
               
@@ -188,7 +190,7 @@
               <div class="bg-gray-200 p-4">
                 ¿En qué película NO ha participado Marisol?
               </div>
-              <ul class="list-group list-group-flush">
+              <ul class="">
                 <li class="respuesta pt-4 pl-4 border-t-2 border-color_fest_oscuro1" es-correcta="0">
                   Tómbola
                 </li>
@@ -205,11 +207,11 @@
         </div>
 
       <div class="flex flex-wrap" >
-        <div class="w-full lg:w-3/7" >
+        <div class="w-full lg:w-3/7     " >
           <div class="my-8 text-left border-b-2 border-color_fest_azul">
             <h2 class="tracking-wider text-4xl" >Radio Añejo</h2>
           </div>
-          <div>
+          <div class="text-center" >
             <iframe src="https://open.spotify.com/embed/playlist/1F2AxMDFybaiSfEZyDjpDc" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
           </div>
         </div>
@@ -218,9 +220,11 @@
           <div class="my-8 text-left border-b-2 border-color_fest_azul">
             <h2 class="tracking-wider text-4xl" >El festival en RRSS</h2>
           </div>
-          <div>
+          <div class="center text-center" >
             <a class="twitter-timeline" data-lang="es" data-width="400" data-height="500" data-theme="light" href="https://twitter.com/JuanJes78281003?ref_src=twsrc%5Etfw">Tweets by JuanJes78281003</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            <a class="btn btn-danger btn-lg"  href="https://twitter.com/intent/tweet?button_hashtag=añejoMusicFest&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #añejoMusicFest</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <div class="mt-4 pt-4" >
+              <a class="bg-color_fest_rosa p-4 mt-8 w-3/7 rounded-lg "  href="https://twitter.com/intent/tweet?button_hashtag=añejoMusicFest&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #añejoMusicFest</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
           </div>
         </div>
 
@@ -243,7 +247,7 @@
             <a  href="ambigu.html">Ambigú</a>
           </div>
           <div class="" >
-            <span class="text-xs" >Juan Jesús Gutiérrez Ramos. PEC 2 de la asignatura Herramientas HTML y CSS II, 2020</span>
+            <span class="text-xs" >Juan Jesús Gutiérrez Ramos. PEC 3 de la asignatura Herramientas HTML y CSS II, 2020</span>
           </div>
         </div>
         <div class="flex-1 text-lg" >

@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta
       name="description"
-      content="Info del festival de música, práctica 2 de la asignatura Herramientas HTML y CSS, basada en css grid,css flexbox y bootstrap"
+      content="Info del festival de música, práctica 3 de la asignatura Herramientas HTML y CSS, basada en el uso de TailWindCSS"
     />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <title>Añejo Music Fest TailWind Edition - Herramientas HTML y CSS II, PEC3</title>
@@ -27,18 +27,23 @@
 
   <body class="bg-color_fest_oscuro1 font-trispace text-white">
     
-    <!-- nueva nav tailwind visto en https://tailwindcomponents.com/component/responsive-header -->
-    <nav class="flex items-center justify-between flex-wrap bg-teal">
+    <!-- 
+      nueva nav tailwind visto en https://tailwindcomponents.com/component/responsive-header ,
+      adaptada al diseño de la web y añadido el comportamiento JS para mostrar/ocultar los enlaces
+      en dispositivos móviles
+     -->
+    <nav class="flex items-center justify-between flex-wrap">
       <div class="flex items-center flex-no-shrink text-white mr-6
       p-2 border-4 border-blue-300 rounded-xl shadow-azul">
         <span class="font-semibold text-xl tracking-tight text-color_fest_rosa tracking-wider">AÑEJO MUSIC FEST</span>
       </div>
       <div class="block lg:hidden">
-        <button class="flex items-center px-3 py-2 border rounded capitalize hover:text-white hover:border-white">
+        <button class="flex items-center px-3 py-2 border rounded capitalize hover:text-white hover:border-white" 
+        onclick="document.getElementById('enlaces_menu').classList.toggle('hidden')" >
           <i class="fas fa-bars text-white"></i>
         </button>
       </div>
-      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto text-2xl tracking-wide text-gray-500">
+      <div id="enlaces_menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto text-2xl tracking-wide text-gray-500">
         <div class="lg:flex-grow">
           <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4">
             INDEX
@@ -57,16 +62,18 @@
       </div>
     </nav>
 
-    <div class="row img-portada">
+    <div class="row img-portada static">
       <picture class="img-portada__foto">
         <source srcset="assets/images/blog1-s.jpg" media="(max-width: 400px)">
         <source srcset="assets/images/blog1-m.jpg" media="(max-width: 800px)">
         <source srcset="assets/images/blog1-l.jpg" media="(min-width: 801px)">
         <img src="assets/images/blog1.jpg" width="100%" height="auto" alt=" AMF">
       </picture>
-      <div class="contenedor_titulo_principal"> <div class="text-center">
-        <span class="span_titulo_1 tracking-in-expand">¡Viva</span> <span class="span_titulo_2 tracking-in-contract-bck-top">la música!</span>
-      </div> </div>
+      <div class="absolute bottom-48 left-96 p-4 md:p-8 lg:p-12 bg-white border-b-4 border-color_fest_amarillo"> 
+        <div class="text-color_fest_oscuro1 text-4xl">
+          <span class="span_titulo_1 tracking-in-expand">¡Viva</span> <span class="span_titulo_2 tracking-in-contract-bck-top">la música!</span>
+        </div> 
+      </div>
     </div>
     <div class="container mx-auto px-4">
       
@@ -75,34 +82,47 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-12 parrafos-blog">
-          <p class="parrafos-blog__destacado" >Escuchar a tus canciones favoritas en directo, bailar, compartir una experiencia única con tus amigos, tomarte algo en el bar mientras tus pies se mueven solos sin que te des cuenta. En definitiva, sentir esa energía especial que solo la música puede trasmitir. Este reino no es solo de los jóvenes, eso se acabó. Bienvenidos al Añejo Music Fest, pasen y vean..</p>
+        <div class="text-justify mb-8">
+          <p class="tracking-wider text-2xl" >Escuchar a tus canciones favoritas en directo, bailar, compartir una experiencia única con tus amigos, tomarte algo en el bar mientras tus pies se mueven solos sin que te des cuenta. En definitiva, sentir esa energía especial que solo la música puede trasmitir. Este reino no es solo de los jóvenes, eso se acabó. Bienvenidos al Añejo Music Fest, pasen y vean..</p>
         </div>
-        <div class="col-lg-12 parrafos-blog">
+        <div class="text-justify tracking-wide text-lg mb-8">
           <p>Añejo Music Fest pretende ser un festival diferente. Somos conscientes del auge que ha tenido el mundo festivalero en los últimos años. Es algo que celebrar y de lo que estar orgullosos. En muchas regiones de España se organizan grandes festivales, han florecido grupos y somos consicientes de que muchas personas han podido disfrutar en los últimos tiempos de conciertos, han podido bailar, cantar y se quedarán en su memoria momentos inovlidales. </p>
           <p>Pero desde Añejo Music Fest nos preguntamos si no nos hemos dejado a alguien en el camino durante todo este proceso. Y nuestra respuesta a esta pregunta es que sí, que <span class="texto--destacado" >A nuestros mayores.</span>. Y no hay ninguna razón para que ellos también puedan disfrutar de todo el mundo de los festivales... y con ese propósito nace nuestro festival</p>
 
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-12 parrafos-blog">
-        <hr class="parrafos-blog__separador" />
+        <div class="text-justify tracking-wide text-lg mb-8">
+        <hr class="my-8 border-b-4 border-color_fest_rosa" />
         <div  >
           La filosofía de nuestro festival, en 6 puntos:
-          <ol class="filosofia-festival" >
-            <li class="filosofia-festival__item" >La música no tiene ni fronteras ni edad. Todos pueden disfrutar de ella</li>
-            <li class="filosofia-festival__item"  >Hay que reivindicar la herencia musical española de este siglo</li>
-            <li class="filosofia-festival__item"  >La música y los eventos sociales tienen propieades terapéuticas incuestionables</li>
-            <li class="filosofia-festival__item"  >Todos merecen disfrutar en directo de sus canciones favoritas</li>
-            <li class="filosofia-festival__item"  >Lo más importante para nosotros es garantizar la seguridad y comodidad de nuestros festivaleros</li>
-            <li class="filosofia-festival__item"  >Los beneficios irán a parar a asociaciones y ONGs destinadas a ayudar a personas de la tercera edad</li>
-          </ol>
+          <ul class="list-none list-inside" >
+            <!-- NO he encontrado como aplicar estilos al número que precede a los elementos li -->
+            <!-- Lo hago 'manualmente' -->
+            <li class="mt-4 flex" >
+                <span class="numero_lista">1</span> La música no tiene ni fronteras ni edad. Todos pueden disfrutar de ella
+            </li>
+            <li class="mt-2 flex"  >
+              <span class="numero_lista">2</span> Hay que reivindicar la herencia musical española de este siglo</li>
+            <li class="mt-2 flex"  >
+              <span class="numero_lista">3</span> La música y los eventos sociales tienen propieades terapéuticas incuestionables
+            </li>
+            <li class="mt-2 flex"  >
+              <span class="numero_lista">4</span> Todos merecen disfrutar en directo de sus canciones favoritas
+            </li>
+            <li class="mt-2 flex"  >
+              <span class="numero_lista">5</span> Lo más importante para nosotros es garantizar la seguridad y comodidad de nuestros festivaleros
+            </li>
+            <li class="mt-2 flex"  >
+              <span class="numero_lista">6</span> Los beneficios irán a parar a asociaciones y ONGs destinadas a ayudar a personas de la tercera edad
+            </li>
+          </ul>
         </div>
-        <hr class="parrafos-blog__separador" />
+        <hr class="my-8 border-b-4 border-color_fest_rosa" />
       </div>
       </div>
-      <div class="row">
-        <div class="col-lg-6 col-sm-12 parrafos-blog">
+      <div class="row mb-8">
+        <div class="text-justify tracking-wide text-lg">
           <div class="cita">
             <blockquote>
               <p class="cita__texto" >
@@ -115,18 +135,18 @@
               </blockquote>
           </div>
         </div>
-        <div class="col-lg-6 col-sm-12 parrafos-blog">
+        <div class="text-justify tracking-wide text-lg">
           <p>Obviamente el salto generacional es innegable, y desde la organización del festival ni queremos ni pretendemos que nuestros mayores salten, o disfruten del impresionante directo de Izal o Vetusta Morla. Ellos tienen su propia música, sus horarios y su ámbiente. Por tanto <span class="texto--destacado" >La organización del festival se adaptará totalmente a sus necesidades.</span></p>
         </div>
       </div>
 
-      <div class="row">
+      <div class="row mb-8">
         <div class="col-lg-12">
           <img src="assets/images/blog2.jpg" width="100%" class="img-fluid rounded" alt="Responsive image">
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-12 parrafos-blog">
+        <div class="row mb-8">
+          <div class="text-justify tracking-wide text-lg">
             <p>Por último, invitar a todos que que se animen, no se arrepentirán. Y si eres joven y piensas que esto no es para tí, puedes hacer un regalo inolvidable a tus padres o abuelos</p>
             <p>Si todavía te quedan dudas, pasate por la sección de <a href="grupos.html">grupos</a> y te convenceremos enseguida. Si ya tienes tu entrada para el festival, pasate por el <a href="ambigu.html">ambigú</a> y echa unas partidas a nuestro trivial o escucha Radio Añejo para ir preparándote</p>
             </div>
@@ -150,7 +170,7 @@
           <a  href="ambigu.html">Ambigú</a>
         </div>
         <div class="" >
-          <span class="text-xs" >Juan Jesús Gutiérrez Ramos. PEC 2 de la asignatura Herramientas HTML y CSS II, 2020</span>
+          <span class="text-xs" >Juan Jesús Gutiérrez Ramos. PEC 3 de la asignatura Herramientas HTML y CSS II, 2020</span>
         </div>
       </div>
       <div class="flex-1 text-lg" >

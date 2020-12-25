@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta
       name="description"
-      content="Info del festival de música, práctica 2 de la asignatura Herramientas HTML y CSS, basada en css grid,css flexbox y bootstrap"
+      content="Info del festival de música, práctica 3 de la asignatura Herramientas HTML y CSS, basada en el uso de TailWindCSS"
     />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <title>Añejo Music Fest TailWind Edition - Herramientas HTML y CSS II, PEC3</title>
@@ -28,18 +28,23 @@
 
   <body class="bg-color_fest_oscuro1 font-trispace text-white">
    
-    <!-- nueva nav tailwind visto en https://tailwindcomponents.com/component/responsive-header -->
-    <nav class="flex items-center justify-between flex-wrap bg-teal">
+    <!-- 
+      nueva nav tailwind visto en https://tailwindcomponents.com/component/responsive-header ,
+      adaptada al diseño de la web y añadido el comportamiento JS para mostrar/ocultar los enlaces
+      en dispositivos móviles
+     -->
+    <nav class="flex items-center justify-between flex-wrap">
       <div class="flex items-center flex-no-shrink text-white mr-6
       p-2 border-4 border-blue-300 rounded-xl shadow-azul">
         <span class="font-semibold text-xl tracking-tight text-color_fest_rosa tracking-wider">AÑEJO MUSIC FEST</span>
       </div>
       <div class="block lg:hidden">
-        <button class="flex items-center px-3 py-2 border rounded capitalize hover:text-white hover:border-white">
+        <button class="flex items-center px-3 py-2 border rounded capitalize hover:text-white hover:border-white"
+        onclick="document.getElementById('enlaces_menu').classList.toggle('hidden')" >
           <i class="fas fa-bars text-white"></i>
         </button>
       </div>
-      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto text-2xl tracking-wide text-gray-500">
+      <div id="enlaces_menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto text-2xl tracking-wide text-gray-500">
         <div class="lg:flex-grow">
           <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 text-white  hover:text-white mr-4">
             INDEX
@@ -120,7 +125,7 @@
           <a  href="ambigu.html">Ambigú</a>
         </div>
         <div class="" >
-          <span class="text-xs" >Juan Jesús Gutiérrez Ramos. PEC 2 de la asignatura Herramientas HTML y CSS II, 2020</span>
+          <span class="text-xs" >Juan Jesús Gutiérrez Ramos. PEC 3 de la asignatura Herramientas HTML y CSS II, 2020</span>
         </div>
       </div>
       <div class="flex-1 text-lg" >
