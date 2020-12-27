@@ -3,6 +3,7 @@ const colors = require('tailwindcss/colors')
 module.exports = {
   theme: {
     extend: {
+      //paleta de colores propia de la web
       colors: {
         'light-blue': colors.lightBlue,
         'color_fest_oscuro1' : '#011027',
@@ -13,6 +14,7 @@ module.exports = {
         cyan: colors.cyan,
       },
     },
+    //Fuente que hemos traido de google font
     fontFamily: {
       trispace: ['Trispace', 'sans-serif'],
     },
@@ -39,8 +41,10 @@ module.exports = {
       'gris' : '16px 16px 8px rgba(150, 150, 150, 0.93)'
     },
     gridTemplateRows: {
-     '6': 'repeat(5, 100px) 50px',
+      '5': 'repeat(4, 100px) 50px',
+      '6': 'repeat(5, 100px) 50px',
     },
+    //definimos algunas animaciones de la version orginal
     keyframes: {
       moverSombra: {
         '0%, 100%': { 'box-shadow' : '10px 10px 30px -8px rgba(255, 230, 107, 1)' },
@@ -56,12 +60,25 @@ module.exports = {
       '0%' : { 'transform' : 'scale(0.1, 0.1)' },
       '50%' : { 'opacity' : '1.0' },
       '100%' : { 'transform' : 'scale(1.2, 1.2)' }
+    }, 
+    parpadeoTexto : {
+      '0%': {'text-shadow' : '0 0 29px rgba(242, 22, 22, 1)', 'opacity' : '0.1'},
+      '2%': {'text-shadow' : '0 0 29px rgba(242, 22, 22, 1)', 'opacity' : '1'},
+      '25%': {'text-shadow' : '0 0 29px rgba(242, 22, 22, 1)', 'opacity' : '0.3'},
+      '30%': {'text-shadow' : '0 0 29px rgba(242, 22, 22, 1)','opacity' : '1'},
+      '70%': { 'text-shadow' : '0 0 29px rgba(242, 22, 22, 1)','opacity' : '0.7'},
+      '72%': { 'text-shadow' : '0 0 29px rgba(242, 22, 22, 1)', 'opacity' : '0.2'},
+      '77%': {'text-shadow' : '0 0 29px rgba(242, 22, 22, 1)','opacity' : '0.9'},
+      '100%': { 'text-shadow' : '0 0 29px rgba(242, 22, 22, 1)','opacity' : '1'}
     }
   },
+  //Definidos los keyframew y animation, ya podemos usar clases
+  //del tipo animate-moverSombra, animate-parpadeoTexto..
     animation: {
       'ping-1': 'ping 1s linear',
       'spin-1': 'spin 1s linear',
-      'moverSombra' :  'moverSombra 8s linear infinite'
+      'moverSombra' :  'moverSombra 8s linear infinite',
+      'parpadeoTexto' : 'parpadeoTexto 2s linear infinite'
      }
   },
   variants: {},

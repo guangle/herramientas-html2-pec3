@@ -33,10 +33,10 @@
       adaptada al diseño de la web y añadido el comportamiento JS para mostrar/ocultar los enlaces
       en dispositivos móviles
      -->
-    <nav class="flex items-center justify-between flex-wrap">
+    <nav class="flex items-center justify-between flex-wrap mt-2">
       <div class="flex items-center flex-no-shrink text-white mr-6
       p-2 border-4 border-blue-300 rounded-xl shadow-azul">
-        <span class="font-semibold text-xl tracking-tight text-color_fest_rosa tracking-wider">AÑEJO MUSIC FEST</span>
+        <span class="font-semibold text-xl tracking-tight text-color_fest_rosa tracking-wider animate-parpadeoTexto">AÑEJO MUSIC FEST</span>
       </div>
       <div class="block lg:hidden">
         <button class="flex items-center px-3 py-2 border rounded capitalize hover:text-white hover:border-white"
@@ -44,7 +44,7 @@
           <i class="fas fa-bars text-white"></i>
         </button>
       </div>
-      <div id="enlaces_menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto text-2xl tracking-wide text-gray-500">
+      <div id="enlaces_menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto text-lg tracking-wide text-gray-500">
         <div class="lg:flex-grow">
           <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 text-white  hover:text-white mr-4">
             INDEX
@@ -63,47 +63,49 @@
       </div>
     </nav>
 
-    <div class="container mx-auto px-44" >
+    <div class="container mx-auto px-4 lg:px-44" >
 
       <!--prueba con grid tailwindcss-->
-      <div class="grid grid-cols-5 grid-rows-6 gap-4 my-16 animate-moverSombra">
-        <div></div>
-        <div></div>
-        <div class="col-span-3"> 
+      <div class="grid animate-moverSombra
+        sm:grid-cols-4  md:grid-cols-4 grid-rows-5 gap-2 my-8
+        lg:grid-cols-5 lg:grid-rows-6 lg:gap-4 lg:my-16 ">
+        <div class="hidden lg:block" ></div>
+        <div class="hidden lg:block" ></div>
+        <div class="col-span-5 lg:col-span-3"> 
           <div class="p-2 mt-8 text-center border-4 border-blue-300 rounded-xl shadow-azul">
-              <span class="font-semibold text-2xl tracking-tight text-color_fest_rosa tracking-wider">AÑEJO MUSIC FEST</span>
+              <span class="font-semibold text-2xl tracking-tight text-color_fest_rosa tracking-wider animate-parpadeoTexto">AÑEJO MUSIC FEST</span>
             </div>
         </div>
-        <div class="text-center pt-8 text-3xl text-color_fest_azul" >
+        <div class="hidden lg:block text-center pt-8 text-3xl text-color_fest_azul" >
           <i class="fas fa-music"></i>
           <a href="grupos.html" class="enlaceGrid color-azul" >Grupos</a>
         </div>
         <div class="bg-color_fest_rosa"></div>
-        <div class="col-span-3 row-span-2">
+        <div class="col-span-4 lg:col-span-3 row-span-2">
           <img src="assets/images/artista1.jpg" class="h-56 w-full" alt="Artista1"></img>
         </div>
         <div class="bg-gradient-to-r from-green-400 to-blue-500"></div>
-        <div class="text-center pt-8 text-3xl text-color_fest_amarillo" >
+        <div class="hidden lg:block  text-center pt-8 text-3xl text-color_fest_amarillo" >
           <i class="fas fa-cocktail"></i>
           <a href="ambigu.html" class="enlaceGrid color-amarillo" >Ambigú</a>
         </div>
-        <div class="col-span-2 row-span-2 place-self-center">
-          <img src="assets/images/ms-icon-310x310.png" class="w-3/7 h-36" alt="Artista1"></img>
+        <div class="col-span-2 lg:row-span-2 place-self-center">
+          <img src="assets/images/ms-icon-310x310.png" class="w-3/7 h-24 lg:h-36" alt="Artista1"></img>
         </div>
-        <div class="row-span-2">
+        <div class="hidden lg:block lg:row-span-2">
           <img src="assets/images/artista2.jpg" class="w-full h-56" alt="Artista2"></img>
         </div>
-        <div >
+        <div class="hidden lg:block " >
           <img src="assets/images/artista3.jpg" class="w-full h-28"  alt="Artista3"></img>
         </div>
-        <div >
+        <div class="hidden lg:block " >
           <img src="assets/images/artista4.jpg" class="w-full h-28"  alt="Artista4"></img>
         </div>
-        <div >
-          <img src="assets/images/artista5.jpg" class="w-full h-28"  alt="Artista5"></img>
+        <div class="sm:mt-4 md:mt-4" >
+          <img src="assets/images/artista5.jpg" class="w-full h-20 lg:h-28"  alt="Artista5"></img>
         </div>
-        <div >
-          <img src="assets/images/artista6.jpg" class="w-full h-28"  alt="Artista6"></img>
+        <div class="sm:mt-4 md:mt-4" >
+          <img src="assets/images/artista6.jpg" class="w-full h-20 lg:h-28"  alt="Artista6"></img>
         </div>
         <div class="col-span-5 h-12 bg-gradient-to-r from-color_fest_rosa to-pink-300"></div>
       </div>

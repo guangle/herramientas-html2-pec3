@@ -32,10 +32,10 @@
       adaptada al diseño de la web y añadido el comportamiento JS para mostrar/ocultar los enlaces
       en dispositivos móviles
      -->
-    <nav class="flex items-center justify-between flex-wrap">
+     <nav class="flex items-center justify-between flex-wrap mt-2">
       <div class="flex items-center flex-no-shrink text-white mr-6
       p-2 border-4 border-blue-300 rounded-xl shadow-azul">
-        <span class="font-semibold text-xl tracking-tight text-color_fest_rosa tracking-wider">AÑEJO MUSIC FEST</span>
+        <span class="font-semibold text-xl tracking-tight text-color_fest_rosa tracking-wider animate-parpadeoTexto">AÑEJO MUSIC FEST</span>
       </div>
       <div class="block lg:hidden">
         <button class="flex items-center px-3 py-2 border rounded capitalize hover:text-white hover:border-white" 
@@ -43,7 +43,7 @@
           <i class="fas fa-bars text-white"></i>
         </button>
       </div>
-      <div id="enlaces_menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto text-2xl tracking-wide text-gray-500">
+      <div id="enlaces_menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto text-lg tracking-wide text-gray-500">
         <div class="lg:flex-grow">
           <a href="index.html" class="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4">
             INDEX
@@ -62,36 +62,42 @@
       </div>
     </nav>
 
-    <div class="row img-portada static">
-      <picture class="img-portada__foto">
+    <div class="relative">
+      <picture class="">
         <source srcset="assets/images/blog1-s.jpg" media="(max-width: 400px)">
         <source srcset="assets/images/blog1-m.jpg" media="(max-width: 800px)">
         <source srcset="assets/images/blog1-l.jpg" media="(min-width: 801px)">
         <img src="assets/images/blog1.jpg" width="100%" height="auto" alt=" AMF">
       </picture>
-      <div class="absolute bottom-48 left-96 p-4 md:p-8 lg:p-12 bg-white border-b-4 border-color_fest_amarillo"> 
-        <div class="text-color_fest_oscuro1 text-4xl">
-          <span class="span_titulo_1 tracking-in-expand">¡Viva</span> <span class="span_titulo_2 tracking-in-contract-bck-top">la música!</span>
+      <!-- border-image no parece estar soportado aún -->
+      <div class="absolute bottom-4 left-8 lg:bottom-48 lg:left-12
+        w-3/7 lg:w-2/7 
+        p-1 md:p-8 lg:p-12 bg-white 
+        border-4 lg:border-8 border-color_fest_amarillo"> 
+        <div class="text-color_fest_oscuro1">
+          <span class="block tracking-in-expand text-xl lg:text-4xl">¡Viva</span> 
+          <span class="block tracking-in-contract-bck-top lg:text-3xl">la música!</span>
         </div> 
       </div>
     </div>
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto px-4 lg:px-24">
       
       <div class="my-8 text-center border-b-4 border-color_fest_amarillo">
-        <h1 class="font-bold tracking-wider text-5xl" >Bienvenidos a Añejo Music Fest</h1>
+        <h1 class="font-bold tracking-wider text-3xl lg:text-5xl" >Bienvenidos a Añejo Music Fest</h1>
       </div>
 
-      <div class="row">
+      <div class="">
         <div class="text-justify mb-8">
           <p class="tracking-wider text-2xl" >Escuchar a tus canciones favoritas en directo, bailar, compartir una experiencia única con tus amigos, tomarte algo en el bar mientras tus pies se mueven solos sin que te des cuenta. En definitiva, sentir esa energía especial que solo la música puede trasmitir. Este reino no es solo de los jóvenes, eso se acabó. Bienvenidos al Añejo Music Fest, pasen y vean..</p>
         </div>
         <div class="text-justify tracking-wide text-lg mb-8">
           <p>Añejo Music Fest pretende ser un festival diferente. Somos conscientes del auge que ha tenido el mundo festivalero en los últimos años. Es algo que celebrar y de lo que estar orgullosos. En muchas regiones de España se organizan grandes festivales, han florecido grupos y somos consicientes de que muchas personas han podido disfrutar en los últimos tiempos de conciertos, han podido bailar, cantar y se quedarán en su memoria momentos inovlidales. </p>
-          <p>Pero desde Añejo Music Fest nos preguntamos si no nos hemos dejado a alguien en el camino durante todo este proceso. Y nuestra respuesta a esta pregunta es que sí, que <span class="texto--destacado" >A nuestros mayores.</span>. Y no hay ninguna razón para que ellos también puedan disfrutar de todo el mundo de los festivales... y con ese propósito nace nuestro festival</p>
+          <p>Pero desde Añejo Music Fest nos preguntamos si no nos hemos dejado a alguien en el camino durante todo este proceso. Y nuestra respuesta a esta pregunta es que sí, que 
+            <span class="border-b-2 border-color_fest_amarillo font-bold" >A nuestros mayores.</span>. Y no hay ninguna razón para que ellos también puedan disfrutar de todo el mundo de los festivales... y con ese propósito nace nuestro festival</p>
 
         </div>
       </div>
-      <div class="row">
+      <div class="">
         <div class="text-justify tracking-wide text-lg mb-8">
         <hr class="my-8 border-b-4 border-color_fest_rosa" />
         <div  >
@@ -121,34 +127,36 @@
         <hr class="my-8 border-b-4 border-color_fest_rosa" />
       </div>
       </div>
-      <div class="row mb-8">
-        <div class="text-justify tracking-wide text-lg">
-          <div class="cita">
-            <blockquote>
-              <p class="cita__texto" >
-                "Sin música, la vida sería un error"
-              </p>
-              <br />
-              <small class="cita__autor" >
-              - Friedrich Nietzsche, filósofo y poeta
-              </small>
-              </blockquote>
-          </div>
+
+      <div class="flex flex-wrap mt-4 lg:mt-8" >
+        <div class="w-full lg:w-1/2 " >
+          <blockquote>
+            <p class="text-3xl italic tracking-wider" >
+              "Sin música, la vida sería un error"
+            </p>
+            <br />
+            <small class="float-right pr-8 mt-8" >
+            - Friedrich Nietzsche, filósofo y poeta
+            </small>
+            </blockquote>
         </div>
-        <div class="text-justify tracking-wide text-lg">
-          <p>Obviamente el salto generacional es innegable, y desde la organización del festival ni queremos ni pretendemos que nuestros mayores salten, o disfruten del impresionante directo de Izal o Vetusta Morla. Ellos tienen su propia música, sus horarios y su ámbiente. Por tanto <span class="texto--destacado" >La organización del festival se adaptará totalmente a sus necesidades.</span></p>
+        <div class="w-full lg:w-1/2 text-justify tracking-wide text-lg" >
+          <p>Obviamente el salto generacional es innegable, y desde la organización del festival ni queremos ni pretendemos que nuestros mayores salten, o disfruten del impresionante directo de Izal o Vetusta Morla. Ellos tienen su propia música, sus horarios y su ámbiente. Por tanto 
+            <span class="border-b-2 border-color_fest_amarillo font-bold" >La organización del festival se adaptará totalmente a sus necesidades.</span></p>
+        
         </div>
       </div>
 
-      <div class="row mb-8">
+
+      <div class="my-8">
         <div class="col-lg-12">
           <img src="assets/images/blog2.jpg" width="100%" class="img-fluid rounded" alt="Responsive image">
           </div>
         </div>
-        <div class="row mb-8">
+        <div class="my-8">
           <div class="text-justify tracking-wide text-lg">
             <p>Por último, invitar a todos que que se animen, no se arrepentirán. Y si eres joven y piensas que esto no es para tí, puedes hacer un regalo inolvidable a tus padres o abuelos</p>
-            <p>Si todavía te quedan dudas, pasate por la sección de <a href="grupos.html">grupos</a> y te convenceremos enseguida. Si ya tienes tu entrada para el festival, pasate por el <a href="ambigu.html">ambigú</a> y echa unas partidas a nuestro trivial o escucha Radio Añejo para ir preparándote</p>
+            <p class="mt-4" >Si todavía te quedan dudas, pasate por la sección de <a class="border-b-2 border-color_fest_azul" href="grupos.html">grupos</a> y te convenceremos enseguida. Si ya tienes tu entrada para el festival, pasate por el <a  class="border-b-2 border-color_fest_azul" href="ambigu.html">ambigú</a> y echa unas partidas a nuestro trivial o escucha Radio Añejo para ir preparándote</p>
             </div>
           </div>
 
