@@ -36,7 +36,7 @@
     "postcss-preset-env": "^6.7.0",
     "rimraf": "^2.7.1",
     "sass": "^1.26.10",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
+    "tailwindcss": "^2.0.1-compat"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1"
