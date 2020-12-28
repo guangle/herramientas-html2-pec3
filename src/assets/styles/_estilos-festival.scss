@@ -4,11 +4,13 @@ son conjuntos de clases que usaremos frecuentemente en la aplicación
 */
 
 //conjunto de clases que se aplican a la tarjeta de un grupo
+
 .card-grupo {
   @apply bg-white text-color_fest_oscuro1 border-4 border-white rounded-lg hover:shadow-multicolor;
 }
 
 //Anchos para repartir las tarjetas en la pantalla en base al espacio disponible
+
 .card-posicionamiento {
   @apply my-1 w-full lg:w-3/10 md:w-3/7 m-1 md:m-2 lg:m-3;
 }
@@ -17,7 +19,8 @@ son conjuntos de clases que usaremos frecuentemente en la aplicación
   @apply bg-white text-color_fest_oscuro1 border-4 border-color_fest_azul rounded-lg;
 }
 
-//Comentar
+//Elemento que numera cada uno de los items de la filosofía del festival
+
 .numero_lista {
   @apply mr-4 py-1 px-4 text-2xl font-bold text-color_fest_amarillo transform -rotate-12 rounded-3xl shadow-azul-small;
 }
